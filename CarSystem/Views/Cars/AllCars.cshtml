@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CarSystem.Models.Car>
+
+@{
+    ViewBag.Title = "AllCars";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Cars</h2>
+@foreach (var car in Model)
+{
+    <li>@car.Make / @car.CarType.Name</li>
+}
