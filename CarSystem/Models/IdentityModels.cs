@@ -21,6 +21,9 @@ namespace CarSystem.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Car> Car { get; set; }
+
+        public DbSet<Customer> Customer { get; set; }
+
         public DbSet<CarType> CarType { get; set; }
 
         public ApplicationDbContext()

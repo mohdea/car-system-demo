@@ -225,6 +225,14 @@
     <Compile Include="Migrations\201710111532572_AddingSampleCarData.Designer.cs">
       <DependentUpon>201710111532572_AddingSampleCarData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710111639352_customerModel.cs" />
+    <Compile Include="Migrations\201710111639352_customerModel.Designer.cs">
+      <DependentUpon>201710111639352_customerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141023435_nameChanged.cs" />
+    <Compile Include="Migrations\201710141023435_nameChanged.Designer.cs">
+      <DependentUpon>201710141023435_nameChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Car.cs" />
@@ -302,6 +310,8 @@
     <Content Include="Views\Cars\AllCars.cshtml" />
     <Content Include="Views\Customers\Create.cshtml" />
     <Content Include="Views\Cars\Create.cshtml" />
+    <Content Include="Views\Customers\ShowAllCars.cshtml" />
+    <Content Include="Views\Customers\CustomersStartWithA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,6 +350,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710111532572_AddingSampleCarData.resx">
       <DependentUpon>201710111532572_AddingSampleCarData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710111639352_customerModel.resx">
+      <DependentUpon>201710111639352_customerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141023435_nameChanged.resx">
+      <DependentUpon>201710141023435_nameChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

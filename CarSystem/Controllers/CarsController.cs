@@ -35,24 +35,6 @@ namespace CarSystem.Controllers
             return View(cars);
         }
 
-        public ActionResult Latest()
-        {
-            var car = new Car() {Make = "Toyota"};
 
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "Isa"},
-                new Customer { Name = "Mahdi"},
-                new Customer { Name = "Zahraa Alnasr"}
-            };
-
-            var latestViewModel = new LatestCarViewModel()
-            {
-                Car = car,
-                Customers = customers
-            };
-            
-            return View(latestViewModel);
-        }
     }
 }
